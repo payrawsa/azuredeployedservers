@@ -1,0 +1,9 @@
+<h1>Fields to input to the table</h1>
+
+<p>This is a simple example of an Angular component.</p>
+<p style="color:darkred" *ngIf="message">{{message}}</p>
+<p aria-live="polite">Enter a positive integer less than 1000 to increment until (azure costs $$$$) : <input #value type="text" name="value" placeholder="Integer" required/></p>
+<p aria-live="polite">Enter a word that will show if the integer is divisble by 3 : <input #firstWord type="text" name="firstWord" placeholder="First Word" required/></p>
+<p aria-live="polite">Enter a word that will show if the integer is divisble by 5 : <input #secondWord type="text" name="secondWord" placeholder="Second Word" required/></p>
+
+<button class="btn btn-primary" (click)="submitValues(value.value, firstWord.value, secondWord.value)">Submit Values</button>

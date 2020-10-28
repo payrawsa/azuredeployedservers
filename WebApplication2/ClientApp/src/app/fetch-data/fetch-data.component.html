@@ -1,0 +1,20 @@
+<h1 id="tableLabel">Data Output</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!results"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="results">
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Output</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let result of results">
+      <td>{{ result.value }}</td>
+      <td>{{ result.text }}</td>
+    </tr>
+  </tbody>
+</table>
